@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Engineering Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="https://placehold.co/40x40" alt="Logo" class="logo">
+          <span>Praveen Kumar T V</span>
+        </a>
+        <div class="d-flex align-items-center">
+          <button id="theme-toggle" class="btn btn-outline-primary me-3">
+            <i class="bi bi-moon-fill"></i>
+          </button>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+            
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <main class="container my-5">
+      <section id="home" class="hero text-center">
+        <div class="profile-photo-container mb-4">
+          <img src="Praveen Kumar.jpg" alt="Profile Photo" class="profile-photo">
+        </div>
+        <h1 class="display-4 mb-4">Engineering Graduate</h1>
+        <p class="lead mb-5">Turning innovative ideas into reality through engineering excellence</p>
+        <div class="cta-buttons">
+          <a href="#contact" class="btn btn-primary me-3">Get in Touch</a>
+          <a href="#projects" class="btn btn-outline-primary">View Projects</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h3>"Let's collaborate and build something amazing together!"</h3>
+          </div>
+          <div class="col-md-6">
+            <div class="contact-links">
+              <a href="goto:praveenkumartv2006@gmail.com" class="contact-item">
+                <i class="bi bi-envelope-fill"></i>
+                praveenkumartv2006@gmail.com
+              </a>
+              <a href="https://github.com/PraveenKumarTV" target="_blank" class="contact-item">
+                <i class="bi bi-github"></i>
+                GitHub
+              </a>
+              <a href="https://linkedin.com/in/praveen-kumar-tv" target="_blank" class="contact-item">
+                <i class="bi bi-linkedin"></i>
+                LinkedIn
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      const themeToggle = document.getElementById('theme-toggle');
+      const html = document.documentElement;
+      const icon = themeToggle.querySelector('i');
+
+      themeToggle.addEventListener('click', () => {
+        if (html.getAttribute('data-bs-theme') === 'light') {
+          html.setAttribute('data-bs-theme', 'dark');
+          icon.classList.replace('bi-moon-fill', 'bi-sun-fill');
+        } else {
+          html.setAttribute('data-bs-theme', 'light');
+          icon.classList.replace('bi-sun-fill', 'bi-moon-fill');
+        }
+      });
+
+      // Add active class to nav links based on current section
+      const navLinks = document.querySelectorAll('.nav-link');
+      navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+          navLinks.forEach(l => l.classList.remove('active'));
+          link.classList.add('active');
+        });
+      });
+    </script>
+  </body>
+</html>
