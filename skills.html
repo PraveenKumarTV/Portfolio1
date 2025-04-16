@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Skills & Achievements - Engineering Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img src="https://placehold.co/40x40" alt="Logo" class="logo">
+          <span>John Doe</span>
+        </a>
+        <div class="d-flex align-items-center">
+          <button id="theme-toggle" class="btn btn-outline-primary me-3">
+            <i class="bi bi-moon-fill"></i>
+          </button>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="skills.html">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <main class="container my-5">
+      <!-- Skills Section -->
+      <section id="skills" class="skills-section mb-5">
+        <h2 class="section-title text-center mb-5">Technical Skills</h2>
+        <div class="row g-4">
+          <!-- DSA -->
+          <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <a href="skill-dsa.html" class="skill-link">
+              <div class="skill-card">
+                <div class="skill-icon" style="color: #FF6B6B;">
+                  <i class="bi bi-braces-asterisk"></i>
+                </div>
+                <h3>Data Structures & Algorithms</h3>
+                <p>Proficient in implementing complex data structures and designing efficient algorithms. Experience in solving computational problems and optimizing solutions.</p>
+              </div>
+            </a>
+          </div>
+          
+          <!-- OOPS -->
+          <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <a href="skill-oops.html" class="skill-link">
+              <div class="skill-card">
+                <div class="skill-icon" style="color: #4ECDC4;">
+                  <i class="bi bi-diagram-3"></i>
+                </div>
+                <h3>Object-Oriented Programming</h3>
+                <p>Strong foundation in OOP principles including encapsulation, inheritance, polymorphism, and abstraction. Experienced in designing scalable and maintainable systems.</p>
+              </div>
+            </a>
+          </div>
+
+          <!-- Web Dev -->
+          <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <a href="skill-webdev.html" class="skill-link">
+              <div class="skill-card">
+                <div class="skill-icon" style="color: #FFD93D;">
+                  <i class="bi bi-globe2"></i>
+                </div>
+                <h3>Web Development</h3>
+                <p>Full-stack web development using modern technologies including HTML5, CSS3, JavaScript, React, Node.js, and various frameworks.</p>
+              </div>
+            </a>
+          </div>
+
+          <!-- App Dev -->
+          <div class="col-md-6" data-aos="fade-up" data-aos-delay="400">
+            <a href="skill-appdev.html" class="skill-link">
+              <div class="skill-card">
+                <div class="skill-icon" style="color: #95D1CC;">
+                  <i class="bi bi-phone"></i>
+                </div>
+                <h3>App Development</h3>
+                <p>Mobile application development experience with Flutter and React Native. Capable of building cross-platform applications with native-like performance.</p>
+              </div>
+            </a>
+          </div>
+
+          <!-- Machine Learning -->
+          <div class="col-md-6" data-aos="fade-up" data-aos-delay="500">
+            <a href="skill-ml.html" class="skill-link">
+              <div class="skill-card">
+                <div class="skill-icon" style="color: #6C5CE7;">
+                  <i class="bi bi-cpu"></i>
+                </div>
+                <h3>Machine Learning</h3>
+                <p>Experience in implementing ML algorithms, data preprocessing, model training, and evaluation using Python, TensorFlow, and scikit-learn.</p>
+              </div>
+            </a>
+          </div>
+
+          <!-- DBMS -->
+          <div class="col-md-6" data-aos="fade-up" data-aos-delay="600">
+            <a href="skill-dbms.html" class="skill-link">
+              <div class="skill-card">
+                <div class="skill-icon" style="color: #A8E6CF;">
+                  <i class="bi bi-database"></i>
+                </div>
+                <h3>Database Management</h3>
+                <p>Proficient in designing and managing databases using SQL and NoSQL technologies. Experience with MySQL, MongoDB, and PostgreSQL.</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Achievements Section -->
+      <section id="achievements" class="achievements-section">
+        <h2 class="section-title text-center mb-5">Achievements</h2>
+        
+        <!-- Achievement Slideshow -->
+        <div class="achievement-slideshow mb-5" data-aos="fade-up">
+          <div id="achievementCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#achievementCarousel" data-bs-slide-to="0" class="active"></button>
+              <button type="button" data-bs-target="#achievementCarousel" data-bs-slide-to="1"></button>
+              <button type="button" data-bs-target="#achievementCarousel" data-bs-slide-to="2"></button>
+              <button type="button" data-bs-target="#achievementCarousel" data-bs-slide-to="3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="https://placehold.co/800x400" class="d-block w-100" alt="Achievement 1">
+                <div class="carousel-caption">
+                  <h5>First Prize in National Hackathon</h5>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="https://placehold.co/800x400" class="d-block w-100" alt="Achievement 2">
+                <div class="carousel-caption">
+                  <h5>Best Innovation Award</h5>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="https://placehold.co/800x400" class="d-block w-100" alt="Achievement 3">
+                <div class="carousel-caption">
+                  <h5>Research Paper Publication</h5>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="https://placehold.co/800x400" class="d-block w-100" alt="Achievement 4">
+                <div class="carousel-caption">
+                  <h5>Excellence in Leadership</h5>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#achievementCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#achievementCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Achievement Timeline -->
+        <div class="achievement-timeline">
+          <div class="timeline-item" data-aos="fade-right">
+            <div class="timeline-content">
+              <h4>2023</h4>
+              <h5>First Prize in National Hackathon</h5>
+              <p>Led a team of four to develop an innovative solution for healthcare management, beating 100+ teams nationwide.</p>
+            </div>
+          </div>
+          <div class="timeline-item" data-aos="fade-left">
+            <div class="timeline-content">
+              <h4>2022</h4>
+              <h5>Research Paper Publication</h5>
+              <p>Published a research paper on "AI in Healthcare" in the International Journal of Computer Science.</p>
+            </div>
+          </div>
+          <div class="timeline-item" data-aos="fade-right">
+            <div class="timeline-content">
+              <h4>2022</h4>
+              <h5>Best Innovation Award</h5>
+              <p>Received the Best Innovation Award for developing a smart irrigation system using IoT and ML.</p>
+            </div>
+          </div>
+          <div class="timeline-item" data-aos="fade-left">
+            <div class="timeline-content">
+              <h4>2021</h4>
+              <h5>Excellence in Leadership</h5>
+              <p>Recognized for outstanding leadership as the Technical Club Secretary.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h3>"Let's collaborate and build something amazing together!"</h3>
+          </div>
+          <div class="col-md-6">
+            <div class="contact-links">
+              <a href="mailto:johndoe@gmail.com" class="contact-item">
+                <i class="bi bi-envelope-fill"></i>
+                johndoe@gmail.com
+              </a>
+              <a href="https://github.com/johndoe" target="_blank" class="contact-item">
+                <i class="bi bi-github"></i>
+                GitHub
+              </a>
+              <a href="https://linkedin.com/in/johndoe" target="_blank" class="contact-item">
+                <i class="bi bi-linkedin"></i>
+                LinkedIn
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000,
+        once: true
+      });
+
+      const themeToggle = document.getElementById('theme-toggle');
+      const html = document.documentElement;
+      const icon = themeToggle.querySelector('i');
+
+      themeToggle.addEventListener('click', () => {
+        if (html.getAttribute('data-bs-theme') === 'light') {
+          html.setAttribute('data-bs-theme', 'dark');
+          icon.classList.replace('bi-moon-fill', 'bi-sun-fill');
+        } else {
+          html.setAttribute('data-bs-theme', 'light');
+          icon.classList.replace('bi-sun-fill', 'bi-moon-fill');
+        }
+      });
+    </script>
+  </body>
+</html>
