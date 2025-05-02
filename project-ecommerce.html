@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-commerce Platform - Project Details</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
+    <header class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img src="https://placehold.co/40x40" alt="Logo" class="logo">
+          <span>John Doe</span>
+        </a>
+        <div class="d-flex align-items-center">
+          <button id="theme-toggle" class="btn btn-outline-primary me-3">
+            <i class="bi bi-moon-fill"></i>
+          </button>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="skills.html">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="projects.html">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <main class="container my-5">
+      <section class="project-detail-section">
+        <div class="mb-5">
+          <h1 class="display-4 mb-4">E-commerce Platform</h1>
+          
+          <!-- Project Slideshow -->
+          <div id="projectCarousel" class="carousel slide mb-5" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#projectCarousel" data-bs-slide-to="0" class="active"></button>
+              <button type="button" data-bs-target="#projectCarousel" data-bs-slide-to="1"></button>
+              <button type="button" data-bs-target="#projectCarousel" data-bs-slide-to="2"></button>
+              <button type="button" data-bs-target="#projectCarousel" data-bs-slide-to="3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="https://placehold.co/1200x600" class="d-block w-100 rounded" alt="Homepage">
+                <div class="carousel-caption">
+                  <h5>Homepage Design</h5>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="https://placehold.co/1200x600" class="d-block w-100 rounded" alt="Product Listing">
+                <div class="carousel-caption">
+                  <h5>Product Catalog</h5>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="https://placehold.co/1200x600" class="d-block w-100 rounded" alt="Shopping Cart">
+                <div class="carousel-caption">
+                  <h5>Shopping Cart</h5>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="https://placehold.co/1200x600" class="d-block w-100 rounded" alt="Admin Dashboard">
+                <div class="carousel-caption">
+                  <h5>Admin Dashboard</h5>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#projectCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#projectCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </button>
+          </div>
+
+          <!-- Project Description -->
+          <div class="row g-4">
+            <div class="col-lg-8">
+              <div class="content-card">
+                <h2>Project Overview</h2>
+                <p class="lead">A comprehensive e-commerce platform built with modern web technologies, featuring real-time inventory management, secure payment processing, and an intuitive admin dashboard.</p>
+                
+                <h3 class="mt-4">Key Features</h3>
+                <ul>
+                  <li>User authentication and authorization</li>
+                  <li>Product catalog with advanced filtering</li>
+                  <li>Real-time inventory tracking</li>
+                  <li>Secure payment processing</li>
+                  <li>Order management system</li>
+                  <li>Admin dashboard with analytics</li>
+                  <li>Responsive design for all devices</li>
+                </ul>
+
+                <h3 class="mt-4">Technical Implementation</h3>
+                <p>The platform is built using React for the frontend, providing a smooth and interactive user experience. The backend is powered by Node.js and Express, with MongoDB as the database. Real-time features are implemented using WebSocket connections.</p>
+              </div>
+            </div>
+
+            <div class="col-lg-4">
+              <div class="content-card">
+                <h3>Technology Stack</h3>
+                <div class="tech-stack-detailed">
+                  <div class="tech-item">
+                    <i class="bi bi-react"></i>
+                    <span>React.js</span>
+                  </div>
+                  <div class="tech-item">
+                    <i class="bi bi-nodejs"></i>
+                    <span>Node.js</span>
+                  </div>
+                  <div class="tech-item">
+                    <i class="bi bi-database"></i>
+                    <span>MongoDB</span>
+                  </div>
+                  <div class="tech-item">
+                    <i class="bi bi-credit-card"></i>
+                    <span>Stripe</span>
+                  </div>
+                  <div class="tech-item">
+                    <i class="bi bi-graph-up"></i>
+                    <span>Chart.js</span>
+                  </div>
+                </div>
+
+                <h3 class="mt-4">Project Links</h3>
+                <div class="project-links">
+                  <a href="https://github.com/johndoe/ecommerce" target="_blank" class="btn btn-outline-primary w-100 mb-2">
+                    <i class="bi bi-github"></i> View Source
+                  </a>
+                  <a href="https://ecommerce-demo.com" target="_blank" class="btn btn-primary w-100">
+                    <i class="bi bi-box-arrow-up-right"></i> Live Demo
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h3>"Let's collaborate and build something amazing together!"</h3>
+          </div>
+          <div class="col-md-6">
+            <div class="contact-links">
+              <a href="mailto:johndoe@gmail.com" class="contact-item">
+                <i class="bi bi-envelope-fill"></i>
+                johndoe@gmail.com
+              </a>
+              <a href="https://github.com/johndoe" target="_blank" class="contact-item">
+                <i class="bi bi-github"></i>
+                GitHub
+              </a>
+              <a href="https://linkedin.com/in/johndoe" target="_blank" class="contact-item">
+                <i class="bi bi-linkedin"></i>
+                LinkedIn
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000,
+        once: true
+      });
+
+      const themeToggle = document.getElementById('theme-toggle');
+      const html = document.documentElement;
+      const icon = themeToggle.querySelector('i');
+
+      themeToggle.addEventListener('click', () => {
+        if (html.getAttribute('data-bs-theme') === 'light') {
+          html.setAttribute('data-bs-theme', 'dark');
+          icon.classList.replace('bi-moon-fill', 'bi-sun-fill');
+        } else {
+          html.setAttribute('data-bs-theme', 'light');
+          icon.classList.replace('bi-sun-fill', 'bi-moon-fill');
+        }
+      });
+    </script>
+  </body>
+</html>
